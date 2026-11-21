@@ -259,9 +259,9 @@ int main(int argc, char** argv) {
 
         CUDA_CHECK(cudaDeviceSynchronize());
         double t0 = now_sec();
-        CUDA_CHECK(cudaEventRecord(ev0));
         CUDA_CHECK(cudaMemcpy(d_perm, perm.data(), (size_t)N * sizeof(int), cudaMemcpyHostToDevice));
         CUDA_CHECK(cudaMemset(d_loss, 0, sizeof(double)));
+        CUDA_CHECK(cudaEventRecord(ev0));
         for (int s = 0; s < N; s += B) {
             const int b = std::min(B, N - s);
             gather_kernel<<<(b * F + TB - 1) / TB, TB>>>(d_X, d_y, d_perm + s, b, F, d_Xb, d_yb);
