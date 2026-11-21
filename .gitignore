@@ -1,0 +1,22 @@
+# Data and large artifacts
+data/*
+!data/README.md
+!data/checksums.txt
+*.bin
+*.npy
+*.csv.gz
+# Build output
+build/
+*.o
+*.out
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+# Results: keep small logs and plots, ignore checkpoints
+results/checkpoints/
+# OS / editor
+.DS_Store
+.vscode/
+*.swp
