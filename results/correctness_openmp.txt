@@ -1,0 +1,9 @@
+== steps: 10
+max abs difference : 2.980e-08
+RMS difference     : 2.164e-09 (relative to RMS weight 1.684e-01: 1.285e-08)
+== steps: 100
+max abs difference : 1.192e-07
+RMS difference     : 5.747e-09 (relative to RMS weight 1.707e-01: 3.367e-08)
+== steps: 1000
+max abs difference : 5.722e-03
+RMS difference     : 1.965e-04 (relative to RMS weight 1.807e-01: 1.087e-03)
