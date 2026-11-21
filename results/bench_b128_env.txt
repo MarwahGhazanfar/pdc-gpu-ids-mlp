@@ -1,0 +1,15 @@
+date: 2026-11-21T13:20:04-05:00
+kernel: Linux 7.1.5+kali-amd64
+CPU(s):                                  8
+Model name:                              AMD Ryzen 5 5560U with Radeon Graphics
+Thread(s) per core:                      1
+Core(s) per socket:                      1
+Hypervisor vendor:                       VMware
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       1.3Gi       3.6Gi        24Mi       3.2Gi       6.4Gi
+gcc: gcc (Debian 16.2.0-1) 16.2.0
+flags serial: -O3 -march=native -std=c++17
+flags openmp: -O3 -march=native -fopenmp -std=c++17
+git commit: 48049eb881c32ee89aa23a0ebcdf5a30c0c283b8
+settings: EPOCHS=10 REPS=5 BATCH=128 THREADS='1 8' BIND=default DATA_DIR=data/processed
+OMP_PROC_BIND=unset OMP_PLACES=unset
