@@ -1,0 +1,69 @@
+train rows 1748586 (using 1748586) | val rows 374697 | F=78 K=6 | batch 512 | epochs 30 | lr 0.01 | momentum 0.90 | seed 42
+class weights (sqrt): 0.448 1.138 2.143 6.745 13.939 14.449
+epoch   1 | train loss 0.1143 | val loss 0.0851 | val acc 0.9658 | val macro-F1 0.7003 | 5.88 s
+epoch   2 | train loss 0.0689 | val loss 0.0703 | val acc 0.9713 | val macro-F1 0.7244 | 4.88 s
+epoch   3 | train loss 0.0593 | val loss 0.0883 | val acc 0.9654 | val macro-F1 0.6921 | 4.06 s
+epoch   4 | train loss 0.0549 | val loss 0.0713 | val acc 0.9701 | val macro-F1 0.7121 | 4.08 s
+epoch   5 | train loss 0.0519 | val loss 0.0745 | val acc 0.9645 | val macro-F1 0.6882 | 4.11 s
+epoch   6 | train loss 0.0499 | val loss 0.0590 | val acc 0.9730 | val macro-F1 0.7353 | 4.10 s
+epoch   7 | train loss 0.0488 | val loss 0.0825 | val acc 0.9598 | val macro-F1 0.6984 | 4.15 s
+epoch   8 | train loss 0.0475 | val loss 0.0651 | val acc 0.9690 | val macro-F1 0.7047 | 4.08 s
+epoch   9 | train loss 0.0469 | val loss 0.0606 | val acc 0.9721 | val macro-F1 0.7227 | 4.08 s
+epoch  10 | train loss 0.0459 | val loss 0.0513 | val acc 0.9750 | val macro-F1 0.7582 | 4.13 s
+epoch  11 | train loss 0.0450 | val loss 0.0613 | val acc 0.9701 | val macro-F1 0.7062 | 4.07 s
+epoch  12 | train loss 0.0446 | val loss 0.0583 | val acc 0.9737 | val macro-F1 0.7401 | 4.12 s
+epoch  13 | train loss 0.0442 | val loss 0.0575 | val acc 0.9725 | val macro-F1 0.7424 | 4.08 s
+epoch  14 | train loss 0.0436 | val loss 0.0673 | val acc 0.9709 | val macro-F1 0.7160 | 4.07 s
+epoch  15 | train loss 0.0431 | val loss 0.0567 | val acc 0.9762 | val macro-F1 0.7655 | 4.17 s
+epoch  16 | train loss 0.0426 | val loss 0.0725 | val acc 0.9664 | val macro-F1 0.6846 | 4.21 s
+epoch  17 | train loss 0.0419 | val loss 0.0577 | val acc 0.9729 | val macro-F1 0.7239 | 4.07 s
+epoch  18 | train loss 0.0418 | val loss 0.0622 | val acc 0.9672 | val macro-F1 0.7092 | 4.07 s
+epoch  19 | train loss 0.0414 | val loss 0.0644 | val acc 0.9708 | val macro-F1 0.7173 | 4.16 s
+epoch  20 | train loss 0.0410 | val loss 0.0527 | val acc 0.9758 | val macro-F1 0.7590 | 4.08 s
+epoch  21 | train loss 0.0407 | val loss 0.0503 | val acc 0.9762 | val macro-F1 0.7378 | 4.18 s
+epoch  22 | train loss 0.0404 | val loss 0.0587 | val acc 0.9759 | val macro-F1 0.7387 | 4.05 s
+epoch  23 | train loss 0.0404 | val loss 0.0551 | val acc 0.9719 | val macro-F1 0.7068 | 4.07 s
+epoch  24 | train loss 0.0403 | val loss 0.0646 | val acc 0.9719 | val macro-F1 0.7041 | 4.12 s
+epoch  25 | train loss 0.0401 | val loss 0.0523 | val acc 0.9741 | val macro-F1 0.7252 | 4.53 s
+epoch  26 | train loss 0.0396 | val loss 0.0503 | val acc 0.9758 | val macro-F1 0.7404 | 4.21 s
+epoch  27 | train loss 0.0392 | val loss 0.0614 | val acc 0.9710 | val macro-F1 0.7672 | 4.27 s
+epoch  28 | train loss 0.0390 | val loss 0.0516 | val acc 0.9757 | val macro-F1 0.7433 | 4.27 s
+epoch  29 | train loss 0.0392 | val loss 0.0539 | val acc 0.9724 | val macro-F1 0.7088 | 4.15 s
+epoch  30 | train loss 0.0387 | val loss 0.0653 | val acc 0.9676 | val macro-F1 0.7053 | 4.15 s
+
+TRAINING TIME (epochs only, excludes validation): 126.66 s total, 4.22 s per epoch
+
+--- final validation metrics ---
+loss 0.0653 | accuracy 0.9676 | macro-P 0.6460 | macro-R 0.9728 | macro-F1 0.7053
+class        precision    recall        F1
+Benign          0.9996    0.9616    0.9802
+DoS/DDoS        0.9436    0.9975    0.9698
+PortScan        0.7399    0.9990    0.8501
+Brute-force     0.9089    0.9883    0.9470
+Web Attack      0.1974    0.9439    0.3265
+Other           0.0863    0.9467    0.1581
+confusion matrix (rows = true, cols = predicted):
+   298887     2863     4777      111     1192     3008
+       70    48141        0       13       37        0
+       10        3    13590        0        1        0
+        6        8        0     1357        2        0
+        6        0        0       12      303        0
+       15        1        0        0        0      284
+
+--- TEST metrics (final evaluation) ---
+loss 0.0651 | accuracy 0.9679 | macro-P 0.6466 | macro-R 0.9707 | macro-F1 0.7057
+class        precision    recall        F1
+Benign          0.9996    0.9620    0.9804
+DoS/DDoS        0.9425    0.9974    0.9692
+PortScan        0.7420    0.9984    0.8513
+Brute-force     0.9104    0.9854    0.9464
+Web Attack      0.1960    0.9379    0.3242
+Other           0.0891    0.9431    0.1629
+confusion matrix (rows = true, cols = predicted):
+   299019     2915     4722      106     1194     2882
+       71    48136        0       14       41        0
+       11        9    13582        1        1        0
+        8        9        0     1352        3        0
+        6        1        1       12      302        0
+       17        0        0        0        0      282
+saved weights to results/weights_serial.bin
