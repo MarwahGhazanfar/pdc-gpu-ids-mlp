@@ -1,0 +1,21 @@
+Building with the recorded flags...
+--- warm-up round (not counted) ---
+round 0/5  serial threads=1      37.66 s  (3.77 s/epoch)  val macro-F1 0.7425
+round 0/5  omp    threads=1      39.94 s  (3.99 s/epoch)  val macro-F1 0.7425
+round 0/5  omp    threads=8      14.44 s  (1.44 s/epoch)  val macro-F1 0.7594
+round 1/5  serial threads=1      38.79 s  (3.88 s/epoch)  val macro-F1 0.7425
+round 1/5  omp    threads=1      41.50 s  (4.15 s/epoch)  val macro-F1 0.7425
+round 1/5  omp    threads=8      15.07 s  (1.51 s/epoch)  val macro-F1 0.7594
+round 2/5  serial threads=1      38.77 s  (3.88 s/epoch)  val macro-F1 0.7425
+round 2/5  omp    threads=1      40.44 s  (4.04 s/epoch)  val macro-F1 0.7425
+round 2/5  omp    threads=8      14.57 s  (1.46 s/epoch)  val macro-F1 0.7594
+round 3/5  serial threads=1      39.19 s  (3.92 s/epoch)  val macro-F1 0.7425
+round 3/5  omp    threads=1      40.42 s  (4.04 s/epoch)  val macro-F1 0.7425
+round 3/5  omp    threads=8      14.32 s  (1.43 s/epoch)  val macro-F1 0.7594
+round 4/5  serial threads=1      38.36 s  (3.84 s/epoch)  val macro-F1 0.7425
+round 4/5  omp    threads=1      40.25 s  (4.03 s/epoch)  val macro-F1 0.7425
+round 4/5  omp    threads=8      14.79 s  (1.48 s/epoch)  val macro-F1 0.7594
+round 5/5  serial threads=1      38.09 s  (3.81 s/epoch)  val macro-F1 0.7425
+round 5/5  omp    threads=1      40.17 s  (4.02 s/epoch)  val macro-F1 0.7425
+round 5/5  omp    threads=8      14.76 s  (1.48 s/epoch)  val macro-F1 0.7594
+Done. Results in results/bench_b128.csv, environment in results/bench_b128_env.txt
